@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML CSS JavaScript — Сургалт</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">WEB<span>ACADEMY</span></div>
+  <div class="course-name">HTML • CSS • JavaScript</div>
+  <div id="slideCounter">1 / 20</div>
+</header>
+
+<main>
+  <div class="progress">
+    <div id="progressBar"></div>
+  </div>
+
+  <section class="slide active">
+    <div class="hero">
+      <span class="tag">АНХАН ШАТНЫ СУРГАЛТ</span>
+      <h1>Веб програмчлалд<br><span>тавтай морил!</span></h1>
+      <p>HTML, CSS, JavaScript-ийг тэгээс эхлэн сурцгаая.</p>
+      <div class="tech-cards">
+        <div class="tech html">HTML<small>Бүтэц</small></div>
+        <div class="tech css">CSS<small>Загвар</small></div>
+        <div class="tech js">JavaScript<small>Үйлдэл</small></div>
+      </div>
+      <p class="tip">🎯 Зорилго: өөрийн веб сайтыг бүтээж сурах.</p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <h2>02. Веб сайт хэрхэн ажилладаг вэ?</h2>
+    <p>Веб сайт бүтээхэд гурван үндсэн технологи ашиглана.</p>
+    <div class="three-columns">
+      <article class="card html">
+        <h3>HTML</h3>
+        <p>Вебийн бүтэц, гарчиг, текст, зураг.</p>
+        <code>&lt;h1&gt;Сайн уу!&lt;/h1&gt;</code>
+      </article>
+      <article class="card css">
+        <h3>CSS</h3>
+        <p>Өнгө, фонт, зай, байрлал.</p>
+        <code>color: blue;</code>
+      </article>
+      <article class="card js">
+        <h3>JavaScript</h3>
+        <p>Товч, тооцоолол, интерактив үйлдэл.</p>
+        <code>alert("Сайн уу!");</code>
+      </article>
+    </div>
+    <div class="tip">🏠 Зүйрлэл: HTML — байшин, CSS — чимэглэл, JavaScript — гэрлийн унтраалга.</div>
+  </section>
+
+  <section class="slide">
+    <h2>03. HTML гэж юу вэ?</h2>
+    <p>HTML нь веб хуудсанд агуулга оруулах тэмдэглэгээний хэл юм.</p>
+    <div class="code-example">
+      <pre><code>&lt;h1&gt;Миний сайт&lt;/h1&gt;
+&lt;p&gt;Би HTML сурч байна.&lt;/p&gt;
+&lt;button&gt;Дарна уу&lt;/button&gt;</code></pre>
+    </div>
+    <div class="result">
+      <h1>Миний сайт</h1>
+      <p>Би HTML сурч байна.</p>
+      <button>Дарна уу</button>
+    </div>
+    <div class="exercise">
+      <b>✍ Дасгал:</b> Гарчгийг өөрийн нэрээр солиорой.
+    </div>
+  </section>
+
+  <section class="slide">
+    <h2>04. HTML баримтын үндсэн бүтэц</h2>
+    <p>HTML файл бүр ерөнхийдөө дараах бүтэцтэй байна.</p>
+    <div class="code-example">
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="mn"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Миний сайт&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Сайн байна уу!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+    <ul>
+      <li><b>head:</b> хуудасны тохиргоо.</li>
+      <li><b>body:</b> дэлгэц дээр харагдах агуулга.</li>
+      <li><b>title:</b> браузерын таб дээрх нэр.</li>
+    </ul>
+    <div class="exercise">Дасгал: title хэсгийн нэрийг өөрчил.</div>
+  </section>
+
+  <section class="slide">
+    <h2>05. Гарчиг, текст, холбоос, зураг</h2>
+    <div class="code-example">
+      <pre><code>&lt;h1&gt;Миний танилцуулга&lt;/h1&gt;
+&lt;p&gt;Би ахлах ангийн сурагч.&lt;/p&gt;
+&lt;a href="https://example.com"&gt;
+  Сайт нээх
+&lt;/a&gt;
+&lt;img src="zurag.jpg" alt="Миний зураг"&gt;</code></pre>
+    </div>
+    <ul>
+      <li><code>h1</code> — гол гарчиг.</li>
+      <li><code>p</code> — догол мөр.</li>
+      <li><code>a</code> — холбоос.</li>
+      <li><code>img</code> — зураг.</li>
+    </ul>
+    <div class="exercise">Дасгал: Өөрийн дуртай хичээлийн тухай текст бич.</div>
+  </section>
+
+  <section class="slide">
+    <h2>06. Жагсаалт, хүснэгт, товч</h2>
+    <div class="code-example">
+      <pre><code>&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;button&gt;Эхлэх&lt;/button&gt;</code></pre>
+    </div>
+    <ul>
+      <li><code>ul</code> — жагсаалт.</li>
+      <li><code>li</code> — жагсаалтын нэг мөр.</li>
+      <li><code>button</code> — товч.</li>
+    </ul>
+    <div class="exercise">Дасгал: Өөрийн сонирхдог 3 зүйлээр жагсаалт үүсгэ.</div>
+  </section>
+
+  <section class="slide">
+    <h2>07. CSS гэж юу вэ?</h2>
+    <p>CSS нь вебийн өнгө, фонт, хэмжээ, байрлалыг өөрчилдөг.</p>
+    <div class="code-example">
+      <pre><code>h1 {
+  color: blue;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}</code></pre>
+    </div>
+    <div class="result">
+      <h1 style="color:blue;text-align:center">Миний веб сайт</h1>
+      <p style="font-size:20px">Энэ бол CSS-ийн жишээ.</p>
+    </div>
+    <div class="exercise">Дасгал: blue өнгийг red болгож турш.</div>
+  </section>
+
+  <section class="slide">
+    <h2>08. CSS-ийг HTML-тэй холбох</h2>
+    <p>HTML-ийн <code>head</code> хэсэгт CSS файлыг холбоно.</p>
+    <div class="code-example">
+      <pre><code>&lt;link rel="stylesheet"
+      href="style.css"&gt;</code></pre>
+    </div>
+    <p><b>style.css</b> файлд:</p>
+    <div class="code-example">
+      <pre><code>body {
+  font-family: Arial, sans-serif;
+  background-color: #eff6ff;
+}
+
+h1 {
+  color: #2563eb;
+}</code></pre>
+    </div>
+    <div class="exercise">Дасгал: Дэвсгэрийг цайвар ногоон болго.</div>
+  </section>
+
+  <section class="slide">
+    <h2>09. Margin, padding, border</h2>
+    <div class="three-columns">
+      <article class="card"><h3>Margin</h3><p>Элементийн гаднах зай.</p></article>
+      <article class="card"><h3>Padding</h3><p>Элементийн доторх зай.</p></article>
+      <article class="card"><h3>Border</h3><p>Элементийн хүрээ.</p></article>
+    </div>
+    <div class="code-example">
+      <pre><code>.card {
+  margin: 20px;
+  padding: 16px;
+  border: 2px solid blue;
+  border-radius: 12px;
+}</code></pre>
+    </div>
+    <div class="exercise">Дасгал: padding-ийг 10px болгон өөрчил.</div>
+  </section>
+
+  <section class="slide">
+    <h2>10. Flexbox ба responsive дизайн</h2>
+    <p>Flexbox нь элементүүдийг нэг мөр эсвэл баганаар байрлуулахад тусална.</p>
+    <div class="code-example">
+      <pre><code>.menu {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+  }
+}</code></pre>
+    </div>
+    <ul>
+      <li><code>display: flex</code> — уян хатан байрлал.</li>
+      <li><code>gap</code> — элемент хоорондын зай.</li>
+      <li><code>@media</code> — дэлгэцийн хэмжээнд тохируулах.</li>
+    </ul>
+    <div class="exercise">Дасгал: Жижиг дэлгэц дээр цэсийг босоо болго.</div>
+  </section>
+
+  <section class="slide">
+    <h2>11. JavaScript гэж юу вэ?</h2>
+    <p>JavaScript нь веб хуудсанд үйлдэл нэмдэг.</p>
+    <div class="code-example">
+      <pre><code>alert("Сайн байна уу!");</code></pre>
+    </div>
+    <button onclick="alert('Сайн байна уу!')">Жишээ кодыг турших</button>
+    <div class="tip">Товч дарах, оноо бодох, шалгалт шалгах зэрэгт ашиглана.</div>
+    <div class="exercise">Дасгал: alert доторх текстийг өөрчил.</div>
+  </section>
+
+  <section class="slide">
+    <h2>12. Хувьсагч ба өгөгдлийн төрөл</h2>
+    <div class="code-example">
+      <pre><code>let name = "Болд";
+let age = 16;
+const isStudent = true;
+
+console.log(name);
+console.log(age);</code></pre>
+    </div>
+    <ul>
+      <li><code>let</code> — утга нь өөрчлөгдөж болно.</li>
+      <li><code>const</code> — дахин оноолт хийхгүй.</li>
+      <li>Текст — String, тоо — Number, үнэн/худал — Boolean.</li>
+    </ul>
+    <div class="exercise">Дасгал: Өөрийн нэр, насаа хувьсагчид хадгал.</div>
+  </section>
+
+  <section class="slide">
+    <h2>13. Тооцоолол ба оператор</h2>
+    <div class="code-example">
+      <pre><code>let a = 12;
+let b = 5;
+
+console.log(a + b); // 17
+console.log(a - b); // 7
+console.log(a * b); // 60
+console.log(a / b); // 2.4
+console.log(a % b); // 2</code></pre>
+    </div>
+    <p><code>+</code> нэмэх, <code>-</code> хасах, <code>*</code> үржүүлэх, <code>/</code> хуваах, <code>%</code> үлдэгдэл.</p>
+    <div class="exercise">Дасгал: 8 ба 4-ийн үржвэрийг console-д гарга.</div>
+    <details><summary>Хариулт харах</summary><code>console.log(8 * 4);</code></details>
+  </section>
+
+  <section class="slide">
+    <h2>14. if / else нөхцөл</h2>
+    <div class="code-example">
+      <pre><code>let score = 75;
+
+if (score >= 60) {
+  console.log("Тэнцсэн");
+} else {
+  console.log("Дахин оролдоорой");
+}</code></pre>
+    </div>
+    <p>Нөхцөл үнэн бол <code>if</code>, худал бол <code>else</code> ажиллана.</p>
+    <div class="exercise">Дасгал: Оноо 80-аас их бол “Сайн” гэж хэвлэ.</div>
+    <details><summary>Хариулт харах</summary><code>if (score > 80) { console.log("Сайн"); }</code></details>
+  </section>
+
+  <section class="slide">
+    <h2>15. Функц, давталт, үйл явдал</h2>
+    <div class="code-example">
+      <pre><code>function greet() {
+  alert("Сайн уу!");
+}
+
+for (let i = 1; i <= 3; i++) {
+  console.log(i);
+}</code></pre>
+    </div>
+    <ul>
+      <li>Функц — дахин ашиглаж болох код.</li>
+      <li>Давталт — үйлдлийг олон удаа хийх.</li>
+      <li>Event — товч дарах зэрэг үйл явдал.</li>
+    </ul>
+    <div class="exercise">Дасгал: 1-ээс 5 хүртэл тоог хэвлэ.</div>
+    <details><summary>Хариулт харах</summary><code>for (let i = 1; i <= 5; i++) console.log(i);</code></details>
+  </section>
+
+  <section class="slide">
+    <h2>16. HTML ба JavaScript-ийг холбох</h2>
+    <div class="code-example">
+      <pre><code>&lt;p id="message"&gt;Энд текст гарна&lt;/p&gt;
+&lt;button id="changeBtn"&gt;Өөрчлөх&lt;/button&gt;
+
+&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+    </div>
+    <p>JavaScript нь HTML элементүүдийг олж, агуулгыг нь өөрчилж чадна.</p>
+    <div class="exercise">Дасгал: HTML дээр өөрийн товч үүсгэ.</div>
+  </section>
+
+  <section class="slide">
+    <h2>17. Товч дарахад текст өөрчлөх</h2>
+    <div class="result">
+      <h3 id="demoTitle">Намайг өөрчлөөрэй</h3>
+      <button id="demoButton">Товч дарах</button>
+    </div>
+    <div class="code-example">
+      <pre><code>const btn = document.getElementById("demoButton");
+
+btn.addEventListener("click", function () {
+  document.getElementById("demoTitle").textContent =
+    "Би код бичиж чадна!";
+});</code></pre>
+    </div>
+    <div class="exercise">Дасгал: Гарчиг өөрчлөгдөхийн зэрэгцээ өнгө нь солигддог болго.</div>
+  </section>
+
+  <section class="slide">
+    <h2>18. Оноо боддог жижиг програм</h2>
+    <p>20 асуултаас хэдэн зөв хариулснаа оруулна уу.</p>
+    <div class="score-box">
+      <input type="number" id="correctCount" min="0" max="20" value="15">
+      <button id="calculateBtn">Оноо бодох</button>
+      <h3 id="scoreResult">Үр дүн энд гарна</h3>
+    </div>
+    <div class="code-example">
+      <pre><code>let percent = correct / 20 * 100;
+console.log("Хувь:", percent);</code></pre>
+    </div>
+    <div class="exercise">Дасгал: 10 зөв хариулсан бол хэдэн хувь вэ?</div>
+  </section>
+
+  <section class="slide">
+    <h2>19. Нэгдсэн төсөл: Миний танилцуулга</h2>
+    <div class="three-columns">
+      <article class="card html"><h3>HTML</h3><p>Нэр, зураг, танилцуулга, холбоос.</p></article>
+      <article class="card css"><h3>CSS</h3><p>Өнгө, карт, фонт, зохион байгуулалт.</p></article>
+      <article class="card js"><h3>JavaScript</h3><p>Товч, интерактив үйлдэл.</p></article>
+    </div>
+    <h3>Үнэлгээний шалгуур</h3>
+    <ul>
+      <li>HTML бүтэц — 25 оноо</li>
+      <li>CSS загвар — 25 оноо</li>
+      <li>JavaScript үйлдэл — 30 оноо</li>
+      <li>Тайлбар, танилцуулга — 20 оноо</li>
+    </ul>
+    <div class="exercise">Бүтээлээ 1 минутын дотор ангийнхандаа танилцуул.</div>
+  </section>
+
+  <section class="slide">
+    <h2>20. Эцсийн сорил</h2>
+    <p>Асуулт бүрээс нэг хариулт сонгоод шалгаарай.</p>
+    <form id="quizForm">
+      <div class="quiz-question">
+        <p>1. Вебийн бүтцийг аль технологи хариуцдаг вэ?</p>
+        <label><input type="radio" name="q1" value="a"> CSS</label>
+        <label><input type="radio" name="q1" value="b"> HTML</label>
+        <label><input type="radio" name="q1" value="c"> JavaScript</label>
+      </div>
+      <div class="quiz-question">
+        <p>2. Өнгө, фонтыг аль технологи өөрчилдөг вэ?</p>
+        <label><input type="radio" name="q2" value="a"> HTML</label>
+        <label><input type="radio" name="q2" value="b"> JavaScript</label>
+        <label><input type="radio" name="q2" value="c"> CSS</label>
+      </div>
+      <div class="quiz-question">
+        <p>3. Товч дарахад үйлдэл хийхэд аль технологи тохиромжтой вэ?</p>
+        <label><input type="radio" name="q3" value="a"> JavaScript</label>
+        <label><input type="radio" name="q3" value="b"> HTML</label>
+        <label><input type="radio" name="q3" value="c"> CSS</label>
+      </div>
+      <div class="quiz-question">
+        <p>4. CSS файлыг холбоход ямар таг ашигладаг вэ?</p>
+        <label><input type="radio" name="q4" value="a"> &lt;script&gt;</label>
+        <label><input type="radio" name="q4" value="b"> &lt;link&gt;</label>
+        <label><input type="radio" name="q4" value="c"> &lt;img&gt;</label>
+      </div>
+      <div class="quiz-question">
+        <p>5. JavaScript-д элемент доторх текст солих шинж чанар аль вэ?</p>
+        <label><input type="radio" name="q5" value="a"> background</label>
+        <label><input type="radio" name="q5" value="b"> margin</label>
+        <label><input type="radio" name="q5" value="c"> textContent</label>
+      </div>
+      <button type="submit">Хариулт шалгах</button>
+    </form>
+    <div id="quizResult" class="tip" aria-live="polite"></div>
+  </section>
+</main>
+
+<footer class="navigation">
+  <button id="prevBtn" class="secondary">← Өмнөх</button>
+  <div class="dots" id="dots"></div>
+  <button id="nextBtn">Дараах →</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
